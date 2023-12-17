@@ -209,12 +209,41 @@
       </p>
     </section> -->
 
-    <!-- Test 4 Анімація елементів -->
+    <!-- Test 4 Анімація елементів + form -->
     <div class="parent">
       <div class="item red">translate</div>
       <div class="item green">rotate</div>
       <div class="item blue">scale</div>
       <div class="item orange">skew</div>
     </div>
+
+    <form class="form" name="contact-form" autocomplete="off" novalidate>
+      <div class="form-field">
+        <input class="form-input" type="text" id="user-name" name="user-name" />
+        <label class="form-label" for="user-name">Ім'я</label>
+      </div>
+
+      <div class="form-field">
+        <input class="form-input" type="tel" id="user-tel" name="user-tel" />
+        <label class="form-label" for="user-tel">Телефон</label>
+      </div>
+
+      <div class="form-field">
+        <input class="form-input" type="email" id="user-email" name="user-email" />
+        <label class="form-label" for="user-email">Електронна пошта</label>
+      </div>
+
+      <div class="checkbox">
+        <input
+          class="checkbox-input"
+          type="checkbox"
+          id="terms-conditions"
+          name="terms-conditions"
+        />
+        <label class="checkbox-label" for="terms-conditions"
+          >Я погоджуюсь з політикою конфіденційності</label
+        >
+      </div>
+    </form>
   </body>
 </html>

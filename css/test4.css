@@ -108,3 +108,83 @@
     /* Искривление елемента (очень редко) */
     transform: skew(20deg, 20deg);
 }
+
+
+
+/* Form */
+.form-field {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 32px;
+}
+
+.form:focus-within {
+    border: 1px solid black;
+}
+
+.form-label {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+    font-size: 16px;
+    line-height: 1.17;
+    transition: transform .3s;
+}
+
+/* .form-input:focus + .form-label {
+    transform: translate(-36px, -40px);
+} */
+
+.form-field:focus-within .form-label {
+    transform: translate(-36px, -40px);
+}
+
+.form-input {
+    padding: 16px 42px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: transparent;
+}
+
+.form-input:focus {
+    border-color: black;
+    outline: none;
+}
+
+
+.checkbox {
+    position: relative;
+}
+
+.checkbox-input {
+    appearance: none;
+}
+
+.checkbox-label {
+    padding-left: 24px;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+    background-color: green;
+}
+
+.checkbox-label::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
