@@ -9,8 +9,13 @@
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 72px 0;
-
     transition: opacity .3s, visibility .3s;
+
+    &.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
 }
 
 .modal {
@@ -23,16 +28,19 @@
     background-color: var(--color-primary-light);
     border-radius: 32px;
     overflow-y: auto;
-}
+    
+    &__btn-close {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
 
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
+    &__form-field {
+        margin-bottom: 32px;
+    }
 
-.modal-btn-close {
-    position: absolute;
-    top: 40px;
-    right: 40px;
+    &__button {
+        display: block;
+        margin: 0 auto 24px;
+    }
 }
