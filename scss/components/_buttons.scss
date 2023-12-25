@@ -1,4 +1,5 @@
 .button {
+    display: block;
     padding: 16px 32px;
     color: var(--color-primary-light);
     font-weight: 600;
@@ -6,11 +7,11 @@
     border: 2px solid var(--color-brand-normal);
     border-radius: 8px;
     cursor: pointer;
-}
 
-.button:hover {
-    background-color: transparent;
-    color: var(--color-brand-dark);
+    &:hover {
+        background-color: transparent;
+        color: var(--color-brand-dark);
+    }
 }
 
 /* .button:disabled {
